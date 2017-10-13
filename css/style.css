@@ -1,9 +1,18 @@
+header {
+
+}
+
 .menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
   padding: 5px 30% 5px 30%;
+  background: white;
+}
+
+main {
+  margin-top: 10px;
 }
 
 li {
@@ -49,7 +58,34 @@ h2 {
   font-size: 20px;
 }
 
+h3 {
+  font-size: 35px;
+}
+
+.subsection {
+  height: 500px;
+  padding: 0px 0px 50px 0px;
+}
+
 .subsection-title {
-  margin: 10px;
+  padding: 50px 0px 0px 0px;
   text-align: center;
+}
+
+#background, #contact {
+  background-color: #EDEEEF;
+}
+
+footer {
+  text-align: center;
+}
+
+@media screen and (max-width: 620px){
+  li {
+    display: block;
+  }
+  .menu {
+    flex-direction: column;
+
+  }
 }
