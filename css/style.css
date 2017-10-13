@@ -1,5 +1,5 @@
 header {
-
+  flex: 1 1 auto;
 }
 
 .menu {
@@ -27,6 +27,8 @@ body {
   background-image: url("../img/desk_image.jpg");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed; //parallax scrolling effect
+  background-repeat: no-repeat; //parallax scrolling effect
   text-align: center;
   height: 500px;
   display: flex;
