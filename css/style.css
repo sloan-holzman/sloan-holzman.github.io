@@ -94,7 +94,9 @@ h3 {
 
 footer {
   text-align: center;
+  font-size: 10px;
 }
+
 
 @media screen and (max-width: 620px){
   li {
