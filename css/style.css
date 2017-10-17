@@ -40,9 +40,14 @@ main {
 
 li {
   display: inline;
+  padding: 0px 2px 0px 2px;
+
 }
 
-
+a {
+  text-decoration: none;
+  color: black;
+}
 
 .background {
   background-image: url("../img/desk_image.jpg");
@@ -100,6 +105,15 @@ h3 {
 footer {
   text-align: center;
   font-size: 10px;
+}
+
+@media screen and (min-width: 620px) and (max-width:920px) {
+  li {
+    padding: 0px 2px 0px 2px;
+  }
+  .menu {
+    padding: 5px 20% 5px 20%;
+  }
 }
 
 
