@@ -76,11 +76,11 @@ h1 {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 35px;
 }
 
 h3 {
-  font-size: 35px;
+  font-size: 20px;
 }
 
 .subsection {
@@ -109,6 +109,8 @@ footer {
   }
   .menu {
     flex-direction: column;
-
+  }
+  h2 {
+    font-size: 30px;
   }
 }
