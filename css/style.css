@@ -25,6 +25,11 @@ main {
   background: transparent; /* make scrollbar invisible */
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+
 .menu {
   display: flex;
   align-items: center;
@@ -46,6 +51,31 @@ li {
 a {
   text-decoration: none;
   color: black;
+}
+
+.projects__project {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.projects__project__description {
+  width: 50%;
+}
+
+.projects__project__image {
+  width: 300px;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+}
+
+#simon {
+  background-image: url("../img/simon.png");
+}
+
+#goaltracker {
+  background-image: url("../img/all_time_daily.png");
 }
 
 .background {
@@ -87,7 +117,7 @@ h3 {
 }
 
 .subsection {
-  height: 500px;
+  /*height: 500px;*/
   padding: 0px 0px 50px 0px;
 }
 
