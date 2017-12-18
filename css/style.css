@@ -1,5 +1,6 @@
-html, body {
-  font-family: "Open Sans",sans-serif;
+html,
+body {
+  font-family: "Open Sans", sans-serif;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -16,13 +17,12 @@ header {
 
 main {
   flex: 1 1 auto;
-  position: relative;/* need this to position inner content */
+  position: relative; /* need this to position inner content */
   overflow-y: scroll;
-
 }
 ::-webkit-scrollbar {
-  width: 0px;  /* remove scrollbar space */
-  background: transparent;  /* make scrollbar invisible */
+  width: 0px; /* remove scrollbar space */
+  background: transparent; /* make scrollbar invisible */
 }
 
 .menu {
@@ -41,7 +41,6 @@ main {
 li {
   display: inline;
   padding: 0px 2px 0px 2px;
-
 }
 
 a {
@@ -62,9 +61,8 @@ a {
   justify-content: center;
   flex-direction: column;
   color: white;
-
 }
-.title{
+.title {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,8 +96,9 @@ h3 {
   text-align: center;
 }
 
-#background, #contact {
-  background-color: #EDEEEF;
+#background,
+#contact {
+  background-color: #edeeef;
 }
 
 footer {
@@ -107,7 +106,7 @@ footer {
   font-size: 10px;
 }
 
-@media screen and (min-width: 620px) and (max-width:920px) {
+@media screen and (min-width: 620px) and (max-width: 920px) {
   li {
     padding: 0px 2px 0px 2px;
   }
@@ -116,8 +115,7 @@ footer {
   }
 }
 
-
-@media screen and (max-width: 620px){
+@media screen and (max-width: 620px) {
   li {
     display: block;
   }
