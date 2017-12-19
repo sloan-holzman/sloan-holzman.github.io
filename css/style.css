@@ -7,6 +7,10 @@ body {
   margin: 0 10px 0 10px;
 }
 
+body a:hover {
+  color: red
+}
+
 header {
   flex: 0 0 auto;
   border-style: solid;
@@ -132,9 +136,6 @@ h3 {
   text-align: center;
 }
 
-.subsection a:hover {
-  color: red;
-}
 
 #skills,
 #contact {
@@ -165,9 +166,7 @@ footer {
 .hvrbox h4 {
 	color: red;
 }
-.hvrbox a:hover {
-  color: yellow;
-}
+
 
 .hvrbox .hvrbox-layer_bottom {
 	display: block;
