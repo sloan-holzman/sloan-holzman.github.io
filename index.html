@@ -11,8 +11,8 @@
     <header>
       <ul class="menu">
         <li><a href="#home">HOME</a></li>
+        <li><a href="#aboutme">ABOUT ME</a></li>
         <li><a href="#skills">SKILLS</a></li>
-        <li><a href="#background">BACKGROUND</a></li>
         <li><a href="#portfolio">PORTFOLIO</a></li>
         <li><a href="#contact">CONTACT</a></li>
       </ul>
@@ -26,20 +26,24 @@
           <h2>SLOAN HOLZMAN</h2>
         </div>
       </div>
+      <div class="subsection" id="aboutme">
+        <div class="subsection-title">
+          <h3>About Me</h3>
+          <p>I'm a full stack web developer, specializing in Node.js and Ruby-on-Rails.</p>
+          <p>In my prior life, I was a Project Manager at the Boston Consulting Group, an MBA graduate from Harvard Business School,</p>
+          <p>and the first hire at an off-grid lighting start-up in East Africa.</p>
+          <br>
+          <a href="./SloanHolzman_Resume.pdf" download>Click to download my resume</a>
+        </div>
+      </div>
       <div class="subsection" id="skills">
         <div class="subsection-title">
           <h3>Skills</h3>
-          <p>Front End Development: Javascript, Handlebars.js, jQuery, JSON, AJAX, HTML, CSS</p>
-          <p>Back End Development: Ruby, Ruby on Rails, PHP, Sinatra, Express.js, Node.js, Mongoose</p>
-        	<p>Databases: PostgreSQL, MongoDB/NoSQL</p>
-        	<p>Testing: RSpec, Capybara, Jasmine</p>
-        	<p>Methodologies: OOP, Test-Driven Development, MVC Pattern, Git, Omni-Auth, ERDs, Agile Development</p>
-        </div>
-      </div>
-      <div class="subsection" id="background">
-        <div class="subsection-title">
-          <h3>Background</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Front End Development: Javascript, React.js, Handlebars.js, jQuery, JSON, AJAX, HTML, CSS</p>
+          <p>Back End Development: Ruby, Ruby on Rails, Sinatra, Express.js, Node.js</p>
+          <p>Databases: PostgreSQL, MongoDB/NoSQL</p>
+          <p>Testing: RSpec</p>
+          <p>Methodologies: OOP, Test-Driven Development, MVC Pattern, Git, Omni-Auth, ERDs, Agile Development</p>
         </div>
       </div>
       <div class="subsection" id="portfolio">
@@ -47,20 +51,28 @@
           <h3>Portfolio</h3>
           <br>
             <div class = "projects">
-              <div class = "projects__project">
-                <div class="projects__project__image" id="simon"></div>
-                <div class="projects__project__description">
-                  <h4>Project 1: Simon</h4>
-                  <p>Javascript website recreating the child boardgame Simon.  Users can play the game is reverse, adjust the speed, add a timer, and compare their score against the all time highs.  Website is also optimized for mobile</p>
-                  <a href="https://sloan-holzman.github.io/simon/" target="_blank">Link</a>
-                </div>
+              <div class="hvrbox">
+              	<img src="./img/simon.png" alt="Simon" class="hvrbox-layer_bottom">
+              	<div class="hvrbox-layer_top">
+              		<div class="hvrbox-text">
+                    <h4>Project 1: Simon</h4>
+                    <p>Javascript website recreating the child boardgame Simon.  Website is also optimized for mobile</p>
+                    <a href="https://sloan-holzman.github.io/simon/" target="_blank">Website</a>
+                    <br>
+                    <a href="https://github.com/sloan-holzman/simon" target="_blank">Repo</a>
+                  </div>
+              	</div>
               </div>
-              <div class = "projects__project">
-                <div class="projects__project__image" id="goaltracker"></div>
-                <div class="projects__project__description">
-                  <h4>Project 2: Goal Tracker</h4>
-                  <p>Ruby-on-Rails website that allows users to track their weekly goals.  Users can set weekly goals, track their performance over time, receive daily or weekly reminder emails, and create mini-competitions with other users.</p>
-                  <a href="https://goaltracker2000.herokuapp.com/" target="_blank">Link</a>
+              <div class="hvrbox">
+                <img src="./img/all_time_daily.png" alt="Goal Tracker" class="hvrbox-layer_bottom">
+                <div class="hvrbox-layer_top">
+                  <div class="hvrbox-text">
+                    <h4>Project 2: Goal Tracker</h4>
+                    <p>Ruby-on-Rails website that allows users to track their weekly goals.</p>
+                    <a href="https://goaltracker2000.herokuapp.com/" target="_blank">Website</a>
+                    <br>
+                    <a href="https://git.generalassemb.ly/sloan-holzman/Project-2" target="_blank">Repo</a>
+                  </div>
                 </div>
               </div>
             </div>
