@@ -77,7 +77,7 @@ a {
 
 .project__img{
   flex: 1;
-  min-width: 500px;
+  min-width: 300px;
 }
 
 
@@ -284,16 +284,21 @@ footer {
     font-size: 30px;
   }
 
-  .project__info {
-    margin: 0 auto;
-    text-align: center;
+  h3 {
+    font-size: 20px;
   }
+
   p {
     font-size: 14px;
   }
 
+  .project__info {
+    margin: 0 auto;
+    text-align: center;
+  }
+
   .project__img{
-    min-width: 300px;
+    min-width: 275px;
   }
 
 }
