@@ -29,10 +29,6 @@ main {
   background: transparent; /* make scrollbar invisible */
 }
 
-.projects {
-  display: flex;
-  flex-direction: row;
-}
 
 .menu {
   display: flex;
@@ -60,10 +56,47 @@ a {
 .projects {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-bottom: 10px;
+  align-items: center;
+
 }
 
+
+
+.project {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project h3 {
+  margin-top: 0px;
+}
+
+.project__img{
+  flex: 1.5;
+}
+
+
+.project__img img {
+  border-radius: 10px;
+  width: 80%;
+}
+
+.project__info {
+  flex: 1;
+  margin-right: 10%;
+  text-align: left;
+}
+
+.project__info__tech, .project__info__links {
+    color: #888;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 
 
 /*.projects__project__description {
@@ -123,6 +156,10 @@ h2 {
 }
 
 h3 {
+  font-size: 30px;
+}
+
+p {
   font-size: 20px;
 }
 
@@ -137,7 +174,7 @@ h3 {
 }
 
 
-#skills,
+#aboutme,
 #contact {
   background-color: #edeeef;
 }
