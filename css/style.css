@@ -76,7 +76,8 @@ a {
 }
 
 .project__img{
-  flex: 1.5;
+  flex: 1;
+  min-width: 500px;
 }
 
 
@@ -96,6 +97,15 @@ a {
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+.project__info__links a {
+  color: #888;
+}
+
+#aboutme {
+  padding-left: 12%;
+  padding-right: 12%;
 }
 
 
@@ -273,4 +283,17 @@ footer {
   h2 {
     font-size: 30px;
   }
+
+  .project__info {
+    margin: 0 auto;
+    text-align: center;
+  }
+  p {
+    font-size: 14px;
+  }
+
+  .project__img{
+    min-width: 300px;
+  }
+
 }
