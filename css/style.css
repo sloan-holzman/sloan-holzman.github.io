@@ -23,11 +23,11 @@ main {
   flex: 1 1 auto;
   position: relative; /* need this to position inner content */
   overflow-y: scroll;
-  padding-left: 20px; /* if we don't set scrollbar width to 0px, then needed to center */
+  /* padding-left: 20px; /* if we don't set scrollbar width to 0px, then needed to center */ */
 }
 
 ::-webkit-scrollbar {
-  /* width: 0px; /* remove scrollbar space, if we want to do that */ */
+  width: 0px; /* remove scrollbar space, if we want to do that */
   background: transparent; /* make scrollbar invisible */
 }
 
