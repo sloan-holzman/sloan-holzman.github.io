@@ -137,6 +137,7 @@ a:hover {
   flex: 1;
   margin-right: 10%;
   text-align: left;
+  min-width: 300px;
 }
 
 .project__info__tech, .project__info__links {
@@ -176,6 +177,20 @@ p {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .project {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+
+  .project__info {
+    text-align: center;
+    margin: 2% 2%;
+  }
+
+}
+
 @media screen and (max-width: 620px) {
   li {
     display: block;
@@ -209,6 +224,10 @@ p {
 @media screen and (max-width: 300px) {
 
   .project__img{
+    min-width: 200px;
+  }
+
+  .project__info{
     min-width: 200px;
   }
 
