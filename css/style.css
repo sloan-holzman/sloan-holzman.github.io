@@ -56,7 +56,7 @@ a:hover {
 
 
 .background {
-  background-image: url("../img/desk_image.jpg");
+  background-image: url("../img/faded.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed; //parallax scrolling effect
@@ -140,21 +140,15 @@ a:hover {
   min-width: 300px;
 }
 
-.project__info__tech, .project__info__links {
+.project__info__tech, .project__info__links, .project__info__links a, #aboutme a {
     color: #888;
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-.project__info__links a {
-  color: #888;
-}
-
-
 h1 {
   font-size: 75px;
-  /* color: #C00000; */
 }
 
 h2 {
@@ -179,6 +173,8 @@ p {
 }
 
 @media screen and (max-width: 800px) {
+
+
   .project {
     flex-direction: column;
     align-items: center;
@@ -190,6 +186,10 @@ p {
     margin: 2% 2%;
   }
 
+  #aboutme {
+    padding: 2% 2% 10% 2%;
+  }
+
 }
 
 @media screen and (max-width: 620px) {
@@ -199,8 +199,12 @@ p {
   .menu {
     flex-direction: column;
   }
-  h1, h2 {
+  h1 {
     font-size: 30px;
+  }
+
+  h2 {
+    font-size: 25px;
   }
 
   h3 {
