@@ -54,6 +54,9 @@ a:hover {
   color: red !important;
 }
 
+.wrapper {
+  width: 100%;
+}
 
 .background {
   background-image: url("../img/desk_image.jpg");
@@ -63,13 +66,22 @@ a:hover {
   background-repeat: no-repeat; //parallax scrolling effect
   text-align: center;
   height: 500px;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: black;
-  text-shadow: 1px 1px #DCDCDC;
 }
+
+/* .background:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+} */
 
 .subsection {
   padding: 0px 0px 50px 0px;
@@ -85,12 +97,18 @@ a:hover {
   align-items: center;
   justify-content: center;
   height: 20px;
+  color: black;
+  /* text-shadow: 1px 1px black; */
+  /* position: relative; */
 }
 
 .subtitle {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: black;
+  /* text-shadow: 1px 1px black; */
+  /* position: relative; */
 }
 
 #aboutme,
