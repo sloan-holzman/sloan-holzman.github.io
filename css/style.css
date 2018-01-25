@@ -141,18 +141,15 @@ a:hover {
   text-align: left;
 }
 
-.scroll {
+img.scroll {
   position: absolute;
   bottom: 3px;
   right: 5px;
+  width: 10vh;
 }
 
-.scroll button {
-  margin: 0px;
-  background: transparent;
-  border: none;
-  font-size: 25px;
-  font-family: 'Montserrat', sans-serif;
+img.scroll:hover {
+  content: url("../img/red-arrow.png")
 }
 
 #portfolio {

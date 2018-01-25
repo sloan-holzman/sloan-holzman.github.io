@@ -1,16 +1,8 @@
-
-
 $( document ).ready(function() {
-  $("#scrollDown").click(function() {
-      $('html, body').animate({
-          scrollTop: $("#aboutme").offset().top
-      }, 2000);
+  $("#scrollAboutMe").click(function() {
+      $('main').animate({
+          // scrollTop: $("#aboutme").offset().top
+          scrollTop: $("#aboutme").offset().top - $('main').offset().top + $('main').scrollTop()
+      }, 700);
   });
-});
-
-
-$("#scrollDown").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#aboutme").offset().top
-    }, 2000);
 });
