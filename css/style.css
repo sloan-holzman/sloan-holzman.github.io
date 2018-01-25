@@ -5,6 +5,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  background-color: #edeeef;
 }
 
 header {
@@ -140,9 +141,15 @@ a:hover {
   text-align: left;
 }
 
-#aboutme,
-#contact {
-  background-color: #edeeef;
+.scroll p {
+  position: absolute;
+  bottom: 3px;
+  right: 5px;
+  margin: 0px;
+}
+
+#portfolio {
+  background-color: white;
 }
 
 #contact {
@@ -250,9 +257,9 @@ p, a {
 
 @media screen and (max-width: 800px) {
 
-  .background {
+  /* .background {
     max-height: 80vh;
-  }
+  } */
 
   .project {
     flex-direction: column;
