@@ -141,10 +141,13 @@ a:hover {
   text-align: left;
 }
 
-.scroll button {
+.scroll {
   position: absolute;
   bottom: 3px;
   right: 5px;
+}
+
+.scroll button {
   margin: 0px;
   background: transparent;
   border: none;
