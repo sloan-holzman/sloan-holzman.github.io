@@ -80,7 +80,7 @@ a:hover {
 
 
 .background {
-  background-image: url("../img/IMG_2087.jpg");
+  background-image: url("../img/new_background.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed; //parallax scrolling effect
@@ -116,6 +116,11 @@ a:hover {
 
 
 .title h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.subtitle h2 {
   margin: 0;
   padding: 0;
 }
@@ -227,7 +232,7 @@ h2 {
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 35px;
   padding-top: 10px;
 }
 
@@ -314,7 +319,7 @@ p, a {
     min-width: 200px;
   }
 
-  .subtitle h3 {
+  .subtitle h2 {
     text-align: left !important;
     font-size: 15px !important;
   }
