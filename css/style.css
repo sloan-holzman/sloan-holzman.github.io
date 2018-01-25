@@ -145,7 +145,7 @@ img.scroll {
   position: absolute;
   bottom: 3px;
   right: 5px;
-  width: 10vh;
+  width: 7vw;
 }
 
 img.scroll:hover {
@@ -261,9 +261,9 @@ p, a {
 
 @media screen and (max-width: 800px) {
 
-  /* .background {
-    max-height: 80vh;
-  } */
+  img.scroll {
+    width: 10vw;
+  }
 
   .project {
     flex-direction: column;
