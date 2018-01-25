@@ -10,15 +10,39 @@ body {
 header {
   flex: 0 0 auto;
   border-style: solid;
-  border-width: 0px 0px 2.5px 0px;
-  border-color: black;
+  border-width: 0px 0px 4px 0px;
+  border-color: red;
 }
+
+.top {
+  padding-left: 1vw;
+}
+
+/* .right {
+  padding-right: 2vw;
+} */
+
+header, .subsection, #aboutme, .background {
+  /* border-style: solid;
+  border-width: 0px 0px 4px 0px;
+  border-color: #0000FF; */
+}
+
+/* #aboutme {
+  border-width: 5px 0px !important;
+} */
+
+
+/* header a {
+  color: red !important;
+
+} */
 
 main {
   flex: 1 1 auto;
   position: relative; /* need this to position inner content */
   overflow-y: scroll;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 footer {
@@ -56,40 +80,64 @@ a:hover {
 
 
 .background {
-  background-image: url("../img/desk_image.jpg");
+  background-image: url("../img/IMG_2087.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed; //parallax scrolling effect
   background-repeat: no-repeat; //parallax scrolling effect
   text-align: center;
-  height: 500px;
+  height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  flex-direction: column;
-  color: black;
+  align-items: center;
+  opacity: 0.9;
+  /* margin: 10px 0px; */
 }
 
 .subsection {
-  padding: 0px 0px 50px 0px;
+  padding: 50px 0px 50px 0px;
 }
 
 .subsection-title {
-  padding: 50px 0px 0px 0px;
+  /* padding: 50px 0px 0px 0px; */
   text-align: center;
 }
 
 .title {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  height: 20px;
+  text-align: right;
+  color: black;
+  /* text-shadow: 1px 1px 1px red; */
 }
 
-.subtitle {
+
+
+.title h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  background-color: white;
+  padding: 50px 70px;
+  white-space: pre-line;
+  margin:0px;
+  position: absolute;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  position: absolute;
+  right: 8%;
+  bottom: 15%;
+  /* background: transparent; */
+
+}
+
+.name {
+  text-align: left;
 }
 
 #aboutme,
@@ -97,9 +145,28 @@ a:hover {
   background-color: #edeeef;
 }
 
+#contact {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #aboutme {
   padding-left: 6%;
   padding-right: 6%;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#aboutme p {
+  font-size: 25px;
+}
+
+#aboutme a {
+  font-size: 20px;
 }
 
 .projects {
@@ -141,25 +208,31 @@ a:hover {
 
 .project__info__tech, .project__info__links, .project__info__links a, #aboutme a {
     color: #888;
-    font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 h1 {
-  font-size: 75px;
+  font-size: 8vw;
+  margin: 0 0;
+  line-height: 7vw;
+  /* margin-bottom: 5px; */
+  /* border-bottom: 3px solid #0000CC; */
 }
 
 h2 {
   font-size: 45px;
+  margin-top: 0;
+  padding-top: 20px;
 }
 
 h3 {
   font-size: 30px;
+  padding-top: 10px;
 }
 
-p {
-  font-size: 20px;
+p, a {
+  font-size: 22px;
 }
 
 @media screen and (min-width: 620px) and (max-width: 920px) {
@@ -173,6 +246,9 @@ p {
 
 @media screen and (max-width: 800px) {
 
+  .background {
+    max-height: 80vh;
+  }
 
   .project {
     flex-direction: column;
@@ -191,7 +267,7 @@ p {
 
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 620px), screen and (max-height: 530px) {
   li {
     display: block;
   }
@@ -200,6 +276,7 @@ p {
   }
   h1 {
     font-size: 30px;
+    line-height: normal;
   }
 
   h2 {
@@ -210,9 +287,11 @@ p {
     font-size: 20px;
   }
 
-  p {
+  #aboutme p, #aboutme a, p, a {
     font-size: 14px;
   }
+
+
 
   .project__info {
     margin: 0 auto;
@@ -233,6 +312,11 @@ p {
 
   .project__info{
     min-width: 200px;
+  }
+
+  .subtitle h3 {
+    text-align: left !important;
+    font-size: 15px !important;
   }
 
 }
