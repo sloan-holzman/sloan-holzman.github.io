@@ -14,13 +14,13 @@ header {
   border-color: red;
 }
 
-.top {
-  padding-left: 1vw;
+.left {
+  padding-left: 3vw;
 }
 
-/* .right {
-  padding-right: 2vw;
-} */
+.right {
+  padding-right: 0.5vw;
+}
 
 header, .subsection, #aboutme, .background {
   /* border-style: solid;
@@ -28,15 +28,9 @@ header, .subsection, #aboutme, .background {
   border-color: #0000FF; */
 }
 
-/* #aboutme {
-  border-width: 5px 0px !important;
-} */
-
-
-/* header a {
-  color: red !important;
-
-} */
+.menu a {
+  font-weight: 700;
+}
 
 main {
   flex: 1 1 auto;
@@ -80,7 +74,7 @@ a:hover {
 
 
 .background {
-  background-image: url("../img/new_background.jpg");
+  background-image: url("../img/desk_image.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed; //parallax scrolling effect
@@ -110,7 +104,6 @@ a:hover {
   justify-content: center;
   text-align: right;
   color: black;
-  /* text-shadow: 1px 1px 1px red; */
 }
 
 
@@ -123,10 +116,12 @@ a:hover {
 .subtitle h2 {
   margin: 0;
   padding: 0;
+  font-size: 4vw;
+  color: red;
 }
 
 .box {
-  background-color: white;
+  background: transparent;
   padding: 50px 70px;
   white-space: pre-line;
   margin:0px;
@@ -135,8 +130,8 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   position: absolute;
-  right: 8%;
-  bottom: 15%;
+  /* right: 8%;
+  bottom: 15%; */
   /* background: transparent; */
 
 }
@@ -218,11 +213,9 @@ a:hover {
 }
 
 h1 {
-  font-size: 8vw;
+  font-size: 10vw;
   margin: 0 0;
-  line-height: 7vw;
-  /* margin-bottom: 5px; */
-  /* border-bottom: 3px solid #0000CC; */
+  line-height: 9vw;
 }
 
 h2 {
@@ -247,6 +240,12 @@ p, a {
   .menu {
     padding: 5px 20% 5px 20%;
   }
+
+  h1 {
+    font-size: 15vw;
+    line-height: 14vw;
+  }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -280,8 +279,8 @@ p, a {
     flex-direction: column;
   }
   h1 {
-    font-size: 30px;
-    line-height: normal;
+    font-size: 15vw;
+    line-height: 14vw;
   }
 
   h2 {
