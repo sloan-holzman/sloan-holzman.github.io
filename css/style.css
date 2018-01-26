@@ -82,7 +82,6 @@ a:hover {
   background-attachment: fixed; //parallax scrolling effect
   background-repeat: no-repeat; //parallax scrolling effect
   text-align: center;
-  height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -92,7 +91,7 @@ a:hover {
 }
 
 .subsection {
-  padding: 50px 0px 50px 0px;
+  padding: 0 1vw;
 }
 
 .subsection-title {
@@ -141,9 +140,9 @@ a:hover {
 
 img.scroll {
   position: absolute;
-  bottom: 3px;
-  /* right: 5px; */
-  width: 7vw;
+  bottom: 1vh;
+  right: 2vw;
+  width: 5vw;
 }
 
 img.scroll:hover {
@@ -170,8 +169,8 @@ img.scroll:hover {
   justify-content: center;
 }
 
-#aboutme, #contact, #portfolio {
-  min-height: 85vh;
+.background, #aboutme, #contact, #portfolio {
+  min-height: 100vh;
 }
 
 #aboutme {
@@ -200,7 +199,8 @@ img.scroll:hover {
 }
 
 .links a {
-  padding: 0 3vw;
+  padding: 4vh 3vw;
+  font-weight: 700;
 }
 
 .projects {
@@ -253,7 +253,7 @@ h1 {
 }
 
 h2 {
-  font-size: 45px;
+  font-size: 6vw;
   margin-top: 0;
   padding-top: 20px;
 }
@@ -280,6 +280,15 @@ p, a {
     line-height: 14vw;
   }
 
+}
+
+@media screen and (max-width: 800px) {
+  .links {
+    flex-direction: column;
+  }
+  .links a {
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 800px) {

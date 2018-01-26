@@ -3,6 +3,8 @@ $( document ).ready(function() {
   $('#virtualWallet').hide();
   $('#homeFinder').hide()
   $('#simon').hide();
+  $('#goalTrackerShow').css('color', 'red')
+
 
   $("#scrollAboutMe").click(function() {
       $('main').animate({
@@ -29,18 +31,26 @@ $( document ).ready(function() {
   });
 
   $('#goalTrackerShow').click(function () {
+      $(this).css('color', 'red')
+      $(this).siblings().css('color', 'black')
       $('#goalTracker').show().siblings().hide();
   });
 
   $('#virtualWalletShow').click(function () {
+      $(this).css('color', 'red')
+      $(this).siblings().css('color', 'black')
       $('#virtualWallet').show().siblings().hide();
   });
 
   $('#homeFinderShow').click(function () {
+      $(this).css('color', 'red')
+      $(this).siblings().css('color', 'black')
       $('#homeFinder').show().siblings().hide();
   });
 
   $('#simonShow').click(function () {
+      $(this).css('color', 'red')
+      $(this).siblings().css('color', 'black')
       $('#simon').show().siblings().hide();
   });
 
