@@ -24,9 +24,10 @@ header {
 }
 
 header, .subsection, #aboutme, .background {
-  /* border-style: solid;
-  border-width: 0px 0px 4px 0px;
-  border-color: #0000FF; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .menu a {
@@ -131,25 +132,31 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   position: absolute;
-  /* right: 8%;
-  bottom: 15%; */
-  /* background: transparent; */
-
 }
 
 .name {
   text-align: left;
 }
 
+
 img.scroll {
   position: absolute;
   bottom: 3px;
-  right: 5px;
+  /* right: 5px; */
   width: 7vw;
 }
 
 img.scroll:hover {
   content: url("../img/red-arrow.png")
+}
+
+#scrollHome {
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipV;
+  -ms-filter: "FlipV";
 }
 
 #portfolio {
@@ -163,10 +170,11 @@ img.scroll:hover {
   justify-content: center;
 }
 
+#aboutme, #contact, #portfolio {
+  min-height: 85vh;
+}
+
 #aboutme {
-  padding-left: 6%;
-  padding-right: 6%;
-  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -178,6 +186,21 @@ img.scroll:hover {
 
 #aboutme a {
   font-size: 20px;
+}
+
+#no-margin {
+  margin-bottom: 0px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.links a {
+  padding: 0 3vw;
 }
 
 .projects {
