@@ -221,7 +221,6 @@ img.scroll:hover {
 }
 
 .project {
-  margin: 40px 0;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -246,7 +245,7 @@ img.scroll:hover {
 
 .project__info {
   flex: 1;
-  margin-right: 10%;
+  margin-right: 2vw;
   text-align: left;
   min-width: 300px;
 }
@@ -275,7 +274,7 @@ h3 {
 }
 
 p, a {
-  font-size: 22px;
+  font-size: calc(12px + 0.8vh);
 }
 
 .wrap {
@@ -398,10 +397,18 @@ span.avoidwrap {
     font-size: 15px !important;
   }
 
+  .hide {
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 450px) {
   img.scroll {
     bottom: 2.5vh;
+  }
+
+  .project__img {
+    max-width: 70vw;
   }
 }
