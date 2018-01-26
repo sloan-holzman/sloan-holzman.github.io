@@ -411,4 +411,13 @@ span.avoidwrap {
   .project__img {
     max-width: 70vw;
   }
+
+}
+
+@media screen and (max-width: 350px) {
+
+  .scroll {
+    display: none;
+  }
+
 }
