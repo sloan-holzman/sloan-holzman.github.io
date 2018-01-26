@@ -277,6 +277,10 @@ p, a {
   font-size: calc(12px + 0.8vh);
 }
 
+.links a {
+  font-size: calc(12px + 1.5vmin);
+}
+
 .wrap {
   display: flex;
   flex-direction: row;
